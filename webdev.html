@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Content</title>
+    <link rel="stylesheet" href="webdev.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">ODEFINITY</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" >Beranda</a>
+            <a href="#about"class="active">Tentang Saya</a>
+            <a href="#services">Layanan</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Web Development Content Section -->
+    <div class="container">
+        <img src="gambar/about.png" alt="Your Name" class="profile-img">
+        <section class="content-wrapper">
+            <h3 class="content-heading">Web Development</h3>
+            <p class="content-text">Saya memiliki pengalaman dalam pengembangan web, khususnya dalam membangun antarmuka pengguna yang responsif dan interaktif. Selama magang di Bakrie Center Foundation - PPTI (IT Development), saya berkontribusi dalam:</p>
+            <ul class="content-list">
+                <li>Mengembangkan antarmuka front-end untuk situs web Yarsi TB Care, memastikan desain yang responsif dan ramah pengguna.</li>
+                <li>Mengelola dan mengoptimalkan data besar dalam platform SITK untuk meningkatkan efisiensi sistem.</li>
+                <li>Mengatasi tantangan teknis, seperti optimasi jaringan dan penggunaan template data standar guna meningkatkan kinerja aplikasi.</li>
+            </ul>
+            <p class="content-text">Selain itu, saya juga mengerjakan berbagai proyek akademis yang memperkuat keahlian saya dalam pengembangan website, termasuk:</p>
+            <ul class="content-list">
+                <li>Membangun platform web bisnis B2C menggunakan HTML, CSS, dan JavaScript dengan desain yang responsif.</li>
+                <li>Mengembangkan dan mengelola database berbasis MySQL, termasuk perancangan skema database untuk mendukung kebutuhan bisnis dan operasional.</li>
+            </ul>
+            <p class="content-text">Dengan latar belakang ini, saya terus mengasah keterampilan dalam pengembangan web modern dan siap menghadapi tantangan baru di dunia teknologi.</p>
+            <button class="back-btn" onclick="window.location.href='index.html#slider-container'">Kembali</button>
+        </section>
+    </div>
+
+    <!-- footer section design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by <a href="https://github.com/laode1004">ODEFINITY</a> | All Rights Reserved.</p>
+        </div>
+        <div class="footer-IconTop">
+            <a href="javascript:void(0);" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

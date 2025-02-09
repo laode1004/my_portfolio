@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Content</title>
+    <link rel="stylesheet" href="webdev.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">ODEFINITY</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" >Beranda</a>
+            <a href="#about"class="active">Tentang Saya</a>
+            <a href="#services">Layanan</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Web Development Content Section -->
+    <div class="container">
+        <img src="gambar/about.png" alt="Your Name" class="profile-img">
+        <section class="content-wrapper">
+            <h3 class="content-heading">Database Enthusiast</h3>
+            <p class="content-text">Saya memiliki minat yang mendalam dalam pengelolaan dan pengembangan database, didukung oleh pengalaman akademis dan proyek yang telah saya kerjakan. Saya telah mengembangkan berbagai database menggunakan MySQL, MongoDB, dan Neo4j, serta memahami konsep normalisasi data hingga 6NF, desain skema dengan ERD & EERD, serta optimasi query untuk meningkatkan efisiensi sistem.</p>
+            <p class="content-text">Selama perkuliahan, saya aktif dalam proyek berbasis data, termasuk pembuatan database perusahaan film, sistem perpustakaan berbasis MySQL, serta perancangan database untuk platform bisnis dan transaksi McDonald's. Selain itu, pengalaman magang saya di PPTI semakin memperdalam pemahaman saya tentang pengelolaan data besar, validasi data, serta integrasi database dalam sistem berbasis web.</p>
+            <p class="content-text">Dengan pemikiran analitis, perhatian terhadap detail, serta kemampuan problem-solving yang kuat, saya berkomitmen untuk terus mengasah keterampilan dalam database management guna mendukung efisiensi dan keandalan sistem informasi.</p>
+            <p class="content-text">Dengan latar belakang ini, saya terus mengasah keterampilan dalam pengembangan web modern dan siap menghadapi tantangan baru di dunia teknologi.</p>
+            <button class="back-btn" onclick="window.location.href='index.html#slider-container'">Kembali</button>
+        </section>
+    </div>
+
+    <!-- footer section design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by <a href="https://github.com/laode1004">ODEFINITY</a> | All Rights Reserved.</p>
+        </div>
+        <div class="footer-IconTop">
+            <a href="javascript:void(0);" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

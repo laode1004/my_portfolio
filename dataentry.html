@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Content</title>
+    <link rel="stylesheet" href="webdev.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">ODEFINITY</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" >Beranda</a>
+            <a href="#about"class="active">Tentang Saya</a>
+            <a href="#services">Layanan</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Web Development Content Section -->
+    <div class="container">
+        <img src="gambar/about.png" alt="Your Name" class="profile-img">
+        <section class="content-wrapper">
+            <h3 class="content-heading">Data Entry</h3>
+            <p class="content-text">Saya memiliki pengalaman dalam pengelolaan dan pemrosesan data dengan tingkat akurasi yang tinggi. Dalam peran saya sebagai data entry, saya bertanggung jawab atas input, verifikasi, dan analisis data untuk memastikan informasi yang dikelola tetap akurat, terstruktur, dan dapat digunakan secara optimal.</p>
+            <p class="content-text">Selama magang di PPTI, saya menangani data sensitif dalam platform SITK, di mana saya melakukan input data secara sistematis, verifikasi kesesuaian informasi, serta analisis untuk meningkatkan efisiensi dan akurasi sistem. Saya juga turut serta dalam proses validasi data TBC komunitas untuk memastikan integritas informasi dalam mendukung investigasi kontak secara lebih efektif.</p>
+            <p class="content-text">Selain pengalaman praktis, saya juga memiliki latar belakang akademis yang kuat dalam pengelolaan data. Saya terbiasa menggunakan berbagai sistem database seperti MySQL, MongoDB, dan Neo4j, serta menerapkan teknik normalisasi data hingga 6NF untuk meningkatkan efisiensi penyimpanan dan pemrosesan data. Saya juga memiliki kemampuan dalam mengolah data dengan Microsoft Excel, termasuk penggunaan fungsi lanjutan, query, serta analisis berbasis data untuk menghasilkan wawasan yang lebih mendalam.</p>
+            <p class="content-text">Dengan perhatian terhadap detail, ketelitian, serta kemampuan problem-solving yang baik, saya berkomitmen untuk memastikan setiap data yang diproses tidak hanya akurat, tetapi juga dapat memberikan manfaat dalam mendukung pengambilan keputusan berbasis data secara efektif.</p>
+            <button class="back-btn" onclick="window.location.href='index.html#slider-container'">Kembali</button>
+        </section>
+    </div>
+
+    <!-- footer section design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by <a href="https://github.com/laode1004">ODEFINITY</a> | All Rights Reserved.</p>
+        </div>
+        <div class="footer-IconTop">
+            <a href="javascript:void(0);" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
