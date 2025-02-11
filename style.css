@@ -472,6 +472,9 @@ span{
     .header {
         padding: 1.5rem 5%;
     }
+    .header .logo {
+        margin-bottom: 1rem;
+    }
     .navbar {
         position: absolute;
         top: 100%;
