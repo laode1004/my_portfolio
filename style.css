@@ -690,7 +690,7 @@ span{
 
     .contact{
         display: inline-block;
-        margin-left: 13px;
+        margin: center;
     }
     .contact h2 {
         margin-bottom: 20px;
