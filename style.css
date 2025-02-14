@@ -456,40 +456,24 @@ span{
     color: var(--second-bg-color);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px){ 
+    #menu-icon {
+        display: block;
+        margin-right: 40px;
+    }
     html {
-        font-size: 58%;
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
     }
     .header {
         padding: 1.5rem 5%;
     }
-    .home-content h1 {
-        font-size: 4.5rem;
-    }
-    .home-img img, .about-img img {
-        width: 40vw;
-    }
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px){ 
-    html {
-        font-size: 55%;
-    }  
-    body {
-        overflow-x: hidden; /* Mencegah zoom out */
-    }
-    .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 4%;
-    }
     .header .logo {
         margin-bottom: 1rem;
     }
-    
     .navbar {
         position: absolute;
         top: 100%;
@@ -506,8 +490,8 @@ span{
     }
     .navbar a {
         display: block;
-        font-size: 1.5rem;
-        margin: 2rem 0;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
     .home {
         flex-direction: column;
@@ -752,32 +736,16 @@ span{
     .footer-IconTop a i {
         font-size: 2.4rem;
         color: var(--second-bg-color);
-    }    
+    }
+    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
-    .header {
-        padding: 1rem 3%;
-    }
-    .navbar a {
-        font-size: 1.3rem;
-        margin-left: 1.5rem;
-    }
-    .home-content h1 {
-        font-size: 3.5rem;
-    }
-    .home-content h3 {
-        font-size: 2rem;
-    }
-    .home-img img, .about-img img {
-        width: 60vw;
-    }
-    .btn {
-        font-size: 1.4rem;
-        padding: 0.8rem 2rem;
+    .contact form .input-box input {
+        width: 100%;
     }
 }
 
