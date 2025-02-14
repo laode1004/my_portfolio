@@ -478,12 +478,18 @@ span{
     html {
         font-size: 55%;
     }  
+    body {
+        overflow-x: hidden; /* Mencegah zoom out */
+    }
     .header {
-        padding: 1.5rem 5%;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 4%;
     }
     .header .logo {
         margin-bottom: 1rem;
     }
+    
     .navbar {
         position: absolute;
         top: 100%;
@@ -500,8 +506,8 @@ span{
     }
     .navbar a {
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.5rem;
+        margin: 2rem 0;
     }
     .home {
         flex-direction: column;
