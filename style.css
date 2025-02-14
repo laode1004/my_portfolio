@@ -458,18 +458,21 @@ span{
 
 @media (max-width: 768px){ 
     #menu-icon {
-        display: block;
-        margin-right: 40px;
+        display: block !important;
+        font-size: 3.5rem; /* Perbesar jika perlu */
+        cursor: pointer;
     }
     html {
         font-size: 55%;
-        overflow-x: hidden;
     }
     body {
         overflow-x: hidden;
     }
     .header {
         padding: 1.5rem 5%;
+        display: flex;
+        justify-content: space-between; /* Pastikan elemen tersebar */
+        align-items: center;
     }
     .header .logo {
         margin-bottom: 1rem;
