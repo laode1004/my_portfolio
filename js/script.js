@@ -100,4 +100,15 @@ var swiper = new Swiper('.certificate-container', {
     },
 });
 
+function sendToWhatsApp() {
+    let nama = document.getElementById("nama").value;
+    let email = document.getElementById("email").value;
+    let nohp = document.getElementById("nohp").value;
+    let subjek = document.getElementById("subjek").value;
+    let pesan = document.getElementById("pesan").value;
+
+    let whatsappURL = `https://wa.me/6282193346790?text=Halo,%20saya%20${nama}%0AEmail:%20${email}%0ANo HP:%20${nohp}%0ASubjek:%20${subjek}%0APesan:%20${pesan}`;
+    
+    window.open(whatsappURL, "_blank");
+};
         

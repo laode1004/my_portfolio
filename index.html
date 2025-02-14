@@ -228,16 +228,16 @@
     <!-- kontak section desing -->
     <section class="contact" id="contact">
         <h2 class="heading">Kontak <span>Saya!</span></h2>
-        <form action="#">
+        <form onsubmit="sendToWhatsApp(); return false;">
             <div class="input-box">
-                <input type="text" placeholder="Nama Lengkap">
-                <input type="text" placeholder="Alamat Email">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" placeholder="Alamat Email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Nomor Handphone">
-                <input type="text" placeholder="Email Subjek">
+                <input type="number" id="nohp" placeholder="Nomor Handphone" required>
+                <input type="text" id="subjek" placeholder="Email Subjek" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Kase Pesan Apa?"></textarea>
+            <textarea id="pesan" cols="30" rows="10" placeholder="Kase Pesan Apa?" required></textarea>
             <input class="btn" type="submit" value="Kirim Pesan">
         </form>
     </section>
