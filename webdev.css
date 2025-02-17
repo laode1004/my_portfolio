@@ -49,6 +49,10 @@ body {
     border-bottom: rgba(0, 0, 0, .2);
 }
 
+.profile-img{
+    filter: brightness(50%);
+}
+
 .logo {
     font-size: 2.2rem; /* Menyesuaikan ukuran font */
     color: var(--text-color);
